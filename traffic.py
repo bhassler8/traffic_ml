@@ -39,7 +39,7 @@ with st.sidebar.expander("Option 2: Fill Out Form"):
                                                                                     'Martin Luther King Jr Day', 'Columbus Day',
                                                                                     'Veterans Day', 'Washingtons Birthday',
                                                                                     'Memorial Day', 'Independence Day', 'State Fair'])
-        temp = st.number_input('Average Temperature in Kelvin', min_value=0.0, max_value=500.0, step=0.1, help="Range: 0-500")
+        temp = st.number_input('Average Temperature in Kelvin', min_value=250.0, max_value=350.0, step=0.1, help="Range: 250-350")
         rain_1h = st.number_input('Amount in mm of rain for the past hour', min_value=0.0, max_value=10000.0, step=0.1, help="Range: 0-10000")
         snow_1h = st.number_input('Amount in mm of snow for the past hour', min_value=0.0, max_value=1.0, step=0.01, help="Range: 0-1")
         clouds_all = st.number_input('Percentage of Cloud Cover', min_value=0, max_value=100, step=1, help="Range: 0-100")
