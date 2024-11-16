@@ -102,7 +102,7 @@ else:
     # Display results using metric card
     st.metric(label = "Predicted Volume", value = f"{int(pred_value)}")
     st.write("With a", ((1 - alpha) * 100), "% confidence interval:")
-    st.write(f"**Confidence Interval**: [{lower_limit.round(0)}, {upper_limit.round(0)}]")
+    st.write(f"**Confidence Interval**: [{round(lower_limit, 0)}, {round(upper_limit, 0)}]")
 
 # Additional tabs for XGBoost model performance
 st.subheader("Model Insights")
